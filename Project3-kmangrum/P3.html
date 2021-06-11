@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3: Drawing with Canvas</title>
+  <style>
+    body { background: black url('drawing.png') no-repeat center center; background-size: 1550px; min-height: 100vh; display: grid; place-items: center; }
+    canvas { width: 800px; height: 500px; background-color: gray; border-radius:10px; border: 18px solid white; }
+    #controls { display: flex; }
+    button { margin: 0 1.0em 0 0; }
+    canvas.shake { animation: shake 0.5s linear 1;}
+    @keyframes shake {
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      20%,
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+      40%,
+      60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+    .active {
+      background-color: lightblue;
+      border: 2px solid blue;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="canvas-wrapper">
+    <canvas width="1600" height="1000" id="canvas"></canvas>
+    <div id="controls">
+      <!---@TO-DO: Make the clear button work - use the shake class -->
+      <button class="clear" data-action="clear">CLEAR</button>
+      <!--
+          -@TO-DO: Add at least three more color choices 
+           ok to have one be a solid color, but the rest should be something 
+           creative like wild / random / rainbow in demo
+      -->
+      <button class="erase" data-action="erase">ERASE</button>
+      <button class="black" data-action="black">BLACK</button>
+      <button class="wild" data-action="wild">WILD</button>
+      <button class="random" data-action="random">RANDOM</button>
+      <button class="rainbow" data-action="rainbow">RAINBOW</button>
+
+      <!---@TO-DO:  Add a way to change the width of the line -->
+      <input class="thin" type="radio" data-action="thin" name="line">Thin</input> &nbsp;
+      <input class="medium" type="radio" data-action="medium" name="line" checked>Medium</input> &nbsp;
+      <input class="thick" type="radio" data-action="thick" name="line">Thick</input>
+      
+    </div>
+  </div>
+  
+  <script src="./P3.js"></script>
+</body>
+</html>

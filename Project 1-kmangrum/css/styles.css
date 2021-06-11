@@ -1,0 +1,42 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+ }
+ *, *:before, *:after {
+    box-sizing: inherit;
+ }
+
+
+ body {
+   background-color: white;
+   font-family: 'Fredoka One', cursive;
+ }
+
+ div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border: 1px solid black;
+ }
+/* Button style gotten from https://www.fabriziovanmarciano.com/button-styles/ */
+ button {
+   color: #fff !important;
+   text-transform: uppercase;
+   text-decoration: none;
+   background: #000000;
+   padding: 20px;
+   border-radius: 50px;
+   display: inline-block;
+   border: none;
+   transition: all 0.4s ease 0s;
+ }
+ 
+ /* Button style gotten from https://www.fabriziovanmarciano.com/button-styles/ */
+ button:hover {
+   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+   transition: all 0.4s ease 0s;
+   }
