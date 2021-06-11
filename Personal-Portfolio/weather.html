@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+		I360 Web Design
+		Basic HTML/CSS template
+	-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Kendall Mangrum | Weather </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel='icon' href='images/favicon.png' type='image/x-icon' />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web%7cMontserrat" rel="stylesheet">
+    <!-- Swipebox -->
+    <link rel="stylesheet" href="plugins/swipebox/css/swipebox.css">
+
+    <!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav id="mySidenav" class="sidenav">
+            <!-- <a href="#" id="about">About &nbsp; &nbsp; <i class="fas fa-angle-right"></i></a> -->
+            <a href="writings.html" id="writings">Writings <i class="fas fa-angle-right"></i></a>
+            <a href="projects.html" id="projects">Projects <i class="fas fa-angle-right"></i></a>
+            <a href="resume.html" id="resume">Resume <i class="fas fa-angle-right"></i></a>
+        </nav>
+        <div class="container">
+            <!-- Logo created at: https://hatchful.shopify.com/editor/customize-logo -->
+            <a href="index.html"><img src="images/logo_transparent.png" alt="Kendall Mangrum Logo" class="logo-home"></a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <article class="introduction">
+                <h2>Get Weather Using JavaScript & OpenWeatherMap API</h2>
+                    <img class="result"src="images/projects/weather-app-fixed.png" alt="Snake Game">
+                    <section>
+                        <p>For my Web Design II class we were tasked with using JavaScript and the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to create a webpage that takes in either an Indiana city/county name or any United States zipcode and outputs the current weather. You can interact with the webpage <a href="http://pages.iu.edu/~kmangrum/I399/WeatherApp/index.html">here</a> or check it out on <a href="https://github.iu.edu/kmangrum/i399-kmangrum/tree/master/WeatherApp">GitHub.</a></p>
+                    </section>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>Input the City Name</h4>
+                        <p>The first option the user has to search for a certain location's current weather is using a city name. The user just needs to type in a city name using its proper capitalization and spacing, and the program with output the corresponding information for that city. This program is limited to cities within Indiana however. The user can however search county names as well if they wanted. They can also receive the temperature in either Fahrenheit or Celsius.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/projects/cloudy-background.png">
+                        <img src="images/projects/cloudy-background.png" alt="Cloudy Background in Fahrenheit"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/projects/celsius-zip.png">
+                        <img src="images/projects/celsius-zip.png" alt="Clear Sky Background in Celsius"></a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Input a Zipcode</h4>
+                        <p>The user also has the option to search the current weather using a zipcode. The zipcode feature isn't limited to only Indiana however. It can be used to search for the current weather for any zipcode within the United States. Something else to note is that the background image changes depending on the current weather for each location. If the wind speed is 35 mph or greater, an alert also pops up on screen.</p>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>City Name Error</h4>
+                        <p>If the user types in the name of a city wrong or if that city isn't included in the city names database file, "Invalid City Name" appears on the screen letting the user know what happened.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/projects/city-error.png">
+                        <img src="images/projects/city-error.png" alt="City Name Typo"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/projects/404-error.png">
+                        <img src="images/projects/404-error.png" alt="Code for food"></a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Zipcode Error</h4>
+                        <p>If the user types in an invalid zipcode, a message saying "There was a 404 error..." appears on the screen. This is because the zipcode is plugged into a url to find the data, so if the zipcode is invalid, the url will be too.</p>
+                    </section>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <h3>Connect With Me!</h3>
+            <div class="footer-flex">
+                <a href="mailto:kmangrum@iu.edu"><i class="far fa-envelope fa-4x"></i></a>
+                <a href="https://twitter.com/kmangrum3"><i class="fab fa-twitter fa-4x"></i></a>
+                <a href="https://www.instagram.com/kmangrum3/"><i class="fab fa-instagram fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/kendall-mangrum-a91203157/"><i class="fab fa-linkedin-in fa-4x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

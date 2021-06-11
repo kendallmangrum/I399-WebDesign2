@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+		I360 Web Design
+		Basic HTML/CSS template
+	-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Kendall Mangrum | Snake </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel='icon' href='images/favicon.png' type='image/x-icon' />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web%7cMontserrat" rel="stylesheet">
+    <!-- Swipebox -->
+    <link rel="stylesheet" href="plugins/swipebox/css/swipebox.css">
+
+    <!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav id="mySidenav" class="sidenav">
+            <!-- <a href="#" id="about">About &nbsp; &nbsp; <i class="fas fa-angle-right"></i></a> -->
+            <a href="writings.html" id="writings">Writings <i class="fas fa-angle-right"></i></a>
+            <a href="projects.html" id="projects">Projects <i class="fas fa-angle-right"></i></a>
+            <a href="resume.html" id="resume">Resume <i class="fas fa-angle-right"></i></a>
+        </nav>
+        <div class="container">
+            <!-- Logo created at: https://hatchful.shopify.com/editor/customize-logo -->
+            <a href="index.html"><img src="images/logo_transparent.png" alt="Kendall Mangrum Logo" class="logo-home"></a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <article class="introduction">
+                <h2>Snake Game Created in Java</h2>
+                    <img class="result"src="images/projects/snake.png" alt="Snake Game">
+                    <section>
+                        <p>For one of my Computer Science homeworks I was assigned to complete a custom game of Snake using what I had learned in Java. The game was supposed function similarly to the original game. Some of the code was provided as a starting point, but it was up to me to get the game to work as it is supposed to. Here is the code for the program on <a href="https://github.com/c212/spr2019-h212-kmangrum/tree/master/Homework8/src">GitHub.</a></p>
+                    </section>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>Draw the Snake</h4>
+                        <p>One of the most important parts of the program is actually drawing the snake so that it is visible for the user. The code goes through each piece of the snake starting with the head and draws each circle. This section of the code also shows how the snake is expanded, mkaing use of the direction of the snake. In order to make the program faster, the snake is expanded at the head and reduced at the end allowing it to update faster.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/fullsize/draw.png">
+                        <img src="images/projects/draw.png" alt="Code for drawing"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/fullsize/food.png">
+                        <img src="images/projects/food.png" alt="Code for food"></a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Generate Food to Grow</h4>
+                        <p>An important part of the game of Snake is the circles of food that cause the snake to grow in length. The program generates five pieces of food that are placed randomly within the game screen. The food is colored yellow so that it sticks out and is easy to identify compared to the snake which has a red head and blue body.</p>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>Remove the Food</h4>
+                        <p>The code that removes the food also helps to call the method that grows the snake. The food circle is removed from the screen and added internally to a list that used to know how much longer to make the snake. The image also shows how when food is removed, an equal amount is also added onto the screen in new, random positions.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/fullsize/remove-food.png">
+                        <img src="images/projects/remove-food.png" alt="Code for drawing"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/fullsize/collide.png">
+                        <img src="images/projects/collide.png" alt="Code for food"></a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Collision</h4>
+                        <p>The most integral function of the Snake game is the collision. Whenever the snake collides with a piece of food, the food is removed from the screen and another body segment is added to snake. Ultimately, the snake is going to either collide with itself or the edge of the screen. When this happends, the game is over.</p>
+                    </section>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <h3>Connect With Me!</h3>
+            <div class="footer-flex">
+                <a href="mailto:kmangrum@iu.edu"><i class="far fa-envelope fa-4x"></i></a>
+                <a href="https://twitter.com/kmangrum3"><i class="fab fa-twitter fa-4x"></i></a>
+                <a href="https://www.instagram.com/kmangrum3/"><i class="fab fa-instagram fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/kendall-mangrum-a91203157/"><i class="fab fa-linkedin-in fa-4x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

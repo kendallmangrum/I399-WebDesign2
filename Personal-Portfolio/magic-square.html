@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+		I360 Web Design
+		Basic HTML/CSS template
+	-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Kendall Mangrum | Magic Squares </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel='icon' href='images/favicon.png' type='image/x-icon' />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web%7cMontserrat" rel="stylesheet">
+    <!-- Swipebox -->
+    <link rel="stylesheet" href="plugins/swipebox/css/swipebox.css">
+
+    <!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav id="mySidenav" class="sidenav">
+            <!-- <a href="#" id="about">About &nbsp; &nbsp; <i class="fas fa-angle-right"></i></a> -->
+            <a href="writings.html" id="writings">Writings <i class="fas fa-angle-right"></i></a>
+            <a href="projects.html" id="projects">Projects <i class="fas fa-angle-right"></i></a>
+            <a href="resume.html" id="resume">Resume <i class="fas fa-angle-right"></i></a>
+        </nav>
+        <div class="container">
+            <!-- Logo created at: https://hatchful.shopify.com/editor/customize-logo -->
+            <a href="index.html"><img src="images/logo_transparent.png" alt="Kendall Mangrum Logo" class="logo-home"></a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <article class="introduction">
+                <h2>4x4 Magic Squares in Java</h2>
+                    <img class="result"src="images/projects/magic-square.png" alt="Snake Game">
+                    <section>
+                        <p>For one of my Computer Science homeworks I was assigned to create a program in Java that took in 16 numbers from the user and then tells them if the numbers they entered in that specific order created a 4x4 magic square. A magic square is a square of an equal number of rows and columns that are filled with numbers with each row, column, and diagonal adding up to the same number The image above shows a magic square. Here is the code for the program on <a href="https://github.com/c212/spr2019-h212-kmangrum/blob/master/Homework7/src/InputSquareArray.java">GitHub.</a></p>
+                    </section>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>Create the 4x4 Square</h4>
+                        <p>I decided to create the 4x4 square in the main of the program using an array of arrays. The program continually asks the user to input a number until they have entered 16 numbers, which fills up the 4x4 grid. The program checks how many numbers have been input after each new number so that it knows when to move on to the next row. The numbers fill in the grid starting at the top left and ending at the bottom right.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/fullsize/main.png">
+                        <img src="images/projects/main.png" alt="Code for drawing"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/fullsize/sums.png">
+                        <img src="images/projects/sums.png" alt="Code for food"></a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Getting the Sums</h4>
+                        <p>In order to be able to compare the sums of each row, column, and diagonal we have to add each one ourselves. To do so, I created an array that stores each sum of each row, an array that stores each sum of each column, and an array that stores the sums of each diagonal. I use a for loop to get the sums for each. I also check to make sure that only numbers 1-16 are used.</p>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="words">
+                        <h4>Comparing the Sums</h4>
+                        <p>After finding all of the sums, I compare them all to make sure that they are all the same. If they are all the same and only numbers 1-16 are used, the user did in fact input a Magic Square. If either one of those conditions aren't met, the user did not inout a Magic Square.</p>
+                    </section>
+                    <section class="image">
+                        <a href="images/fullsize/sum-check.png">
+                        <img src="images/projects/sum-check.png" alt="Code for drawing"></a>
+                    </section>
+                </div>
+            </article>
+
+            <article class="step1">
+                <div class="step1-flex">
+                    <section class="image">
+                        <a href="images/fullsize/show.png">
+                        <img src="images/projects/show.png" alt="Code for food">
+                    </a>
+                    </section>
+
+                    <section class="words">
+                        <h4>Visually Showing the Array</h4>
+                        <p>In order to visually show the magic square that the user input, I created a method called show. The method aligns the input numbers in 4x4 grid. </p>
+                    </section>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <h3>Connect With Me!</h3>
+            <div class="footer-flex">
+                <a href="mailto:kmangrum@iu.edu"><i class="far fa-envelope fa-4x"></i></a>
+                <a href="https://twitter.com/kmangrum3"><i class="fab fa-twitter fa-4x"></i></a>
+                <a href="https://www.instagram.com/kmangrum3/"><i class="fab fa-instagram fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/kendall-mangrum-a91203157/"><i class="fab fa-linkedin-in fa-4x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
