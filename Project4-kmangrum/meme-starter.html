@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P4 Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Meme Generator</h1>
+
+    <div class="choices"></div>
+
+    <!-- We COULD put these form elements into a <form> with a submit button, 
+      but JS doesn't work on the server side like Python does. 
+      To process a form while staying in JS, we'd need to learn node.js, 
+      which at least this semester, is not going to happen.
+      I'm telling you because I want you to be aware of what the next
+      steps are... btw you could also use Python to process the form.  -->
+
+    <div class="make-meme">
+      <div class="meme-text">
+        <label for="msg1">Top text: </label>
+        <input type="text" size="35" name="msg1" id="msg1">
+      </div>
+      <div class="meme-text">
+        <label for="msg2">Bottom text: </label>
+        <input type="text" size="35" name="msg2" id="msg2">
+      </div>
+    </div>
+
+      <div class="meme-button">
+        <button>Generate Meme</button>
+      </div>
+
+    <div class="meme"></div>
+
+  </div>
+    
+  <script src="meme-starter.js"></script>
+</body>
+</html>

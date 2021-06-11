@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 6: More Weather</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="https://kit.fontawesome.com/68adfb714d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- content for your weather app goes here -->
+
+  <div class="app-container">
+    <section class="weather-container">
+        <header class="weather-header">
+            <h1>Weather.io v2 by Kendall</h1>
+            <div class="city-zip">
+                <input type="text" name="search1" class="city" placeholder="Enter City" maxlength="20">
+                <p>OR</p>
+                <input type="text" name="search2" class="zipcode" placeholder="Enter Zipcode" maxlength="5">
+                <button type="submit" class="material-icons"><i class="fas fa-search fa-lg"></i></button>
+            </div>
+
+            <div class="radiobuttons">
+              <p>Display temperature in: </p>
+              <input type="radio" id="celsius" name="unit" value="celsius" data-action="Celsius">Celsius</input>
+              &nbsp;&nbsp;
+              <input type="radio" id="fahrenheit" name="unit" value="Fahrenheit" data-action="Fahrenheit" checked>Fahrenheit</input>
+            </div>
+        </header>
+        <p class="error"></p>
+        <div class="weather-info"> 
+            <p class="info">No Weather to Display</p>
+        </div>
+    </div>
+    
+</div>
+
+  
+  <!-- 
+    Just like in Pyton, we can use individual JS files as 'modules' 
+    However it looks a bit different.. notice how we are importing the data
+    needed here as opposed to P2 where we included a second script tag.
+    This is a lot less brittle and a more modern way to include files.
+  -->
+  <script src="js/P6.js" type="module"></script>
+</body>
+</html>
